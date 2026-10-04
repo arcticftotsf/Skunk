@@ -2,7 +2,7 @@ extends Control
 
 const COLS := 9
 const ROWS := 9
-var mines := 10
+var mines := 79
 const CELL_SIZE := 40
 
 @onready var grid: GridContainer = $VBoxContainer/Grid
@@ -29,7 +29,7 @@ const MAX_MINES := 79
 
 func _ready() -> void:
 	grid.columns = COLS
-	mine_input.value = 10
+	mine_input.value = 79
 	start_button.pressed.connect(start_game)
 	start_game()
 
