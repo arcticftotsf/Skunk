@@ -27,7 +27,3 @@ Godot 4 と GDScript で作ったシンプルなマインスイーパです。
 2. Clone this repository
 3. Open `project.godot` from the Godot project manager
 4. Press `F5` to run
-
-## License
-
-MIT License
