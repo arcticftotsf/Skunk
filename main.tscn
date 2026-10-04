@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://deg63nxsbgwcp"]
 
+[ext_resource type="Script" uid="uid://dhykostin05th" path="res://main.gd" id="1_ig7tw"]
+
 [node name="Main" type="Control" unique_id=1848056077]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,31 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=979562171]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Status" type="Label" parent="VBoxContainer" unique_id=1009472567]
+layout_mode = 2
+
+[node name="Grid" type="GridContainer" parent="VBoxContainer" unique_id=659585432]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2122339226]
+layout_mode = 2
+
+[node name="MineLabel" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=944108268]
+layout_mode = 2
+text = "地雷数（1〜79）"
+
+[node name="MineInput" type="SpinBox" parent="VBoxContainer/HBoxContainer" unique_id=1334886868]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1516280876]
+layout_mode = 2
+
+[node name="TimerLabel" type="Label" parent="VBoxContainer" unique_id=1797521749]
+layout_mode = 2
